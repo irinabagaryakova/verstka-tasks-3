@@ -6,13 +6,236 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <h1>Табло рейсов</h1>
         <!-- Поле для фильтрации по городу -->
         <input
             type="text"
             placeholder="Город отправления"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
-
+            
         <!-- Здесь применять вашу самую сильную магию -->
+        <main>
+            <section>
+                <table>
+                    <tr>
+                        <th>тип рейса</th>
+                        <th>номер рейса</th>
+                        <th>авиакомпания</th>
+                        <th>логотип авиакомпании</th>
+                        <th>тип воздушного судна</th>
+                        <th>аэропорт назначения</th>
+                        <th>плановое время вылета или прилёта</th>
+                        <th>номер терминала</th>
+                        <th>статус рейса</th> 
+                    </tr>    
+                    <tr>
+                        <td>Прилет</td>
+                        <td>IB-7250</td>
+                        <td>IBERIA</td>
+                        <td><img 
+                                src="http://www.koltsovo.ru/attels/logo4site/3152.gif"
+                                alt="IBERIA"></td>
+                        <td>A-319</td>
+                        <td>Москва/ШРМ</td>
+                        <td>00:20</td>
+                        <td>F</td>
+                        <td>приземлился</td>             
+                    </tr>  
+                    <tr>
+                        <td>Прилет</td>
+                        <td>SU-2133</td>
+                        <td>Аэрофлот</td>
+                        <td><img 
+                                src="http://svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg"
+                                alt="Аэрофлот"></td>
+                        <td>A-320</td>
+                        <td>Стамбул</td>
+                        <td>00:40</td>
+                        <td>Е</td>
+                        <td>приземлился</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>AF-1845</td>
+                        <td>Air France</td>
+                        <td><img
+                                src="http://svo.aero/r/7F140A14-936D-452E-8B8D-B14214707604/logo_af.png"
+                                alt="Air France"></td>
+                        <td>A-319</td>
+                        <td>Париж</td>
+                        <td>04:20</td>
+                        <td>E</td>
+                        <td>вылетел</td>             
+                    </tr>  
+                    <tr>
+                        <td>Прилет</td>
+                        <td>SU-1166</td>
+                        <td>Аэрофлот</td>
+                        <td><img 
+                                src="http://svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg"
+                                alt="Аэрофлот"></td>
+                        <td>Сухой Суперджет 100-90</td>
+                        <td>Ростов-на-Дону</td>
+                        <td>06:05</td>
+                        <td>D</td>
+                        <td>летит</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>KL-900</td>
+                        <td>KLM</td>
+                        <td><img
+                                src="http://svo.aero/r/9AD7B5AC-FD74-44D2-AA21-DF28E057E93B/KLM_full.jpg"
+                                alt="KLM"></td>
+                        <td>Боинг-737-900</td>
+                        <td>Амстердам</td>
+                        <td>06:45</td>
+                        <td>E</td>
+                        <td>отменен</td>             
+                    </tr>  
+                    <tr>
+                        <td>Прилет</td>
+                        <td>BT-7428</td>
+                        <td>Air Baltic</td>
+                        <td><img
+                                src="http://svo.aero/r/E905CB71-531D-484E-A299-521A9DD89C31/airBaltic_logo_green_big%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
+                                alt="Air Baltic"</td>
+                        <td>Сухой Суперджет 100-90</td>
+                        <td>Москва/ШРМ</td>
+                        <td>03:15</td>
+                        <td>F</td>
+                        <td>приземлился</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>AZ-565</td>
+                        <td>Alitalia</td>
+                        <td><img
+                                src="http://svo.aero/r/588230B8-B330-43C4-A574-864E59044B65/alitalia_big-1.jpg"
+                                alt="Alitalia"></td>
+                        <td>А-320</td>
+                        <td>Милан</td>
+                        <td>05:40</td>
+                        <td>D</td>
+                        <td>ожидание посадки</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>AF-4934</td>
+                        <td>Air France</td>
+                        <td><img
+                                src="http://svo.aero/r/7F140A14-936D-452E-8B8D-B14214707604/logo_af.png"
+                                alt="Air France"></td>
+                        <td>Сухой Суперджет 100-90</td>
+                        <td>Пермь</td>
+                        <td>07:10</td>
+                        <td>D</td>
+                        <td>задержан до 10:25</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>SU-1410</td>
+                        <td>Аэрофлот</td>
+                        <td><img 
+                                src="http://svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg"
+                                alt="Аэрофлот"></td>
+                        <td>A-320</td>
+                        <td>Екатеринбург</td>
+                        <td>07:30</td>
+                        <td>D</td>
+                        <td>регистрация</td>             
+                    </tr>  
+                    <tr>
+                        <td>Прилет</td>
+                        <td>SU-2305</td>
+                        <td>Аэрофлот</td>
+                        <td><img 
+                                src="http://svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg"
+                                alt="Аэрофлот"></td>
+                        <td>A-320</td>
+                        <td>Москва/ШРМ</td>
+                        <td>08:50</td>
+                        <td>D</td>
+                        <td>по расписанию</td>             
+                    </tr>  
+                    <tr>
+                        <td>Прилет</td>
+                        <td>JU-8134</td>
+                        <td>Air Serbia</td>
+                        <td><img 
+                                src="http://svo.aero/r/40390547-1522-4E0D-A8F5-C23955E3D6F4/as1.JPG"
+                                alt="Air Serbia"></td>
+                        <td>A-320</td>
+                        <td>Москва/ШРМ</td>
+                        <td>09:25</td>
+                        <td>F</td>
+                        <td>приземлился</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>SU-3204</td>
+                        <td>Аэрофлот</td>
+                        <td><img 
+                                src="http://svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg"
+                                alt="Аэрофлот"></td>
+                        <td>A-320</td>
+                        <td>Рим</td>
+                        <td>09:30</td>
+                        <td>D</td>
+                        <td>ожидание посадки</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>S7-56</td>
+                        <td>Сибирь S7</td>
+                        <td><img
+                                src="http://www.koltsovo.ru/attels/logo4site/390.gif"
+                                alt="Air Serbia"></td>
+                        <td>A-319</td>
+                        <td>Дубаи</td>
+                        <td>10:00</td>
+                        <td>F</td>
+                        <td>вылетел</td>             
+                    </tr>  
+                    <tr>
+                        <td>Вылет</td>
+                        <td>UX-3286</td>
+                        <td>Air Europa</td>
+                        <td><img
+                                src="http://svo.aero/r/4455459A-F768-4F17-93A9-13EF2754B2B1/aireurope-full.gif"
+                                alt="Air Europa"></td>
+                        <td>Боинг-737-800</td>
+                        <td>Мадрид</td>
+                        <td>10:50</td>
+                        <td>D</td>
+                        <td>посадка закончена</td>             
+                    </tr>  
+                    <tr>
+                        <td>Прилет</td>
+                        <td>SU-2393</td>
+                        <td>Аэрофлот</td>
+                        <td><img 
+                                src="http://svo.aero/r/238E07D9-752F-4DE4-8DE4-305E823670EC/aeroflot_full.jpg"
+                                alt="Аэрофлот"></td>
+                        <td>A-320</td>
+                        <td>Москва/ШРМ</td>
+                        <td>11:00</td>
+                        <td>F</td>
+                        <td>приземлился</td>             
+                    </tr>  
+                </table>
+            </section>   
+            <section>
+                <h3>Получить данные о рейсе на телефон</h3>
+                    <form>
+                        <label for="phone">Введите номер телефона</label>
+                        <input id="phone" name="phone" type="tel" pattern="+7([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7(XXX)XXX-XX-XX" maxlength="16" required><br>
+                        <label for="email">Введите адрес электронной почты</label>
+                        <input id="email" name="email" type="email" required><br>
+                        <input id="button" type="submit" value="Отправить данные о рейсе на телефон">
+                    </form>
+            </section>
+        </main>
     </body>
 </html>
