@@ -5,40 +5,48 @@ table
     width: 100%;
     overflow: hidden;
 }
-​
+
 tr:nth-child(even)
 {
     background: #f2f1f0;
 }
-​
+
 tr:hover 
 {
     color: #ffffff;
     background: #737373;
 }
-​
+
 td:hover
 {
-    position: relative;
+   position: relative;
 } 
-​
-td:hover::before,  
+
+td,
+th
+{
+    position: relative;
+    text-align: center;
+}
+    
+td:hover::before,
 td:hover::after
 {
-    content: "";
+    background: rgba(150, 150 , 150 ,.4);
+    content:"";
     height: 9999px;
-    width: 100%;
-    background: rgba(150, 150 , 150 ,.4);  
+    left:0;
     position: absolute;
-    left: 0;
+    width: 100%;
 }
-​
+
 td::before
 {
     top: -9999px;
 }
-​
-td::after{
-    bottom: -9999px;
-}
 
+td::after,
+th::after
+{
+    top: 0px;
+}
